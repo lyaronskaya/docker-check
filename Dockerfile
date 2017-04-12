@@ -4,8 +4,7 @@ LABEL maintainer «Liubov Yaronskaya <luba.yaronskaya@gmail.com>"
 
 RUN apt-get install -y libzmq3-dev
 
-RUN conda update ipython-notebook && \
-	conda install -y -c r r-essentials
+RUN conda install -y -c r r-essentials
 
 RUN R -e "IRkernel::installspec()"
 
